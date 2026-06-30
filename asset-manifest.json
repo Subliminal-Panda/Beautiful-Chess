@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Beautiful-Chess/static/css/main.807744a6.chunk.css",
+    "main.js": "/Beautiful-Chess/static/js/main.e20fcd6c.chunk.js",
+    "main.js.map": "/Beautiful-Chess/static/js/main.e20fcd6c.chunk.js.map",
+    "runtime-main.js": "/Beautiful-Chess/static/js/runtime-main.467e156f.js",
+    "runtime-main.js.map": "/Beautiful-Chess/static/js/runtime-main.467e156f.js.map",
+    "static/js/2.7d3a975e.chunk.js": "/Beautiful-Chess/static/js/2.7d3a975e.chunk.js",
+    "static/js/2.7d3a975e.chunk.js.map": "/Beautiful-Chess/static/js/2.7d3a975e.chunk.js.map",
+    "index.html": "/Beautiful-Chess/index.html",
+    "static/css/main.807744a6.chunk.css.map": "/Beautiful-Chess/static/css/main.807744a6.chunk.css.map",
+    "static/js/2.7d3a975e.chunk.js.LICENSE.txt": "/Beautiful-Chess/static/js/2.7d3a975e.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/Beautiful-Chess/static/media/BalooBhai2-SemiBold.d1d5fa12.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.467e156f.js",
+    "static/js/2.7d3a975e.chunk.js",
+    "static/css/main.807744a6.chunk.css",
+    "static/js/main.e20fcd6c.chunk.js"
+  ]
+}
