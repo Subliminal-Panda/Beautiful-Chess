@@ -1,8 +1,11 @@
 
 import React, { useState } from 'react';
 import CurrentGameContext from './gameplayComponents/currentGame';
+import Login from './login';
 import routes from './routes';
-import { useRoutes } from 'hookrouter';
+import { useRoutes, setBasepath } from 'hookrouter';
+
+setBasepath('/Beautiful-Chess');
 
 export default function App () {
   const [ newGame, setNewGame ] = useState(true)
@@ -29,11 +32,10 @@ export default function App () {
 
   const routeResult = useRoutes(routes)
 
-
   return (
     <div className='app' >
       <CurrentGameContext.Provider value={{ loginWhite, setLoginWhite, loginBlack, setLoginBlack, newGame, setNewGame, playerOne, setPlayerOne, playerTwo, setPlayerTwo, playerOneData, setPlayerOneData, playerTwoData, setPlayerTwoData, activePlayer, setActivePlayer, selection, setSelection, pieces, setPieces, locations, setLocations, doubleStepped, setDoubleStepped, taken, setTaken, underAttack, setUnderAttack, castled, setCastled, inCheck, setInCheck, assassinAttempts, setAssassinAttempts, moving, setMoving, pinned, setPinned, gameEnd, setGameEnd, updated, setUpdated }}>
-        {routeResult}
+        {routeResult || <Login />}
       </CurrentGameContext.Provider>
     </div>
   );

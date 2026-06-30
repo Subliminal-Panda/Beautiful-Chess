@@ -326,7 +326,7 @@ export default function Login() {
                     <h1 className='login-title' style={ !loginWhite ? {color: "black"} : !loginBlack ? {color: "white"} : null}>{`${ !playerOneData || !playerOne ? "Player 1," : !playerTwoData || !playerTwo ? "Player 2," : '' } who are you?`}</h1>
                     <div className="buttons-wrapper">
 
-                            <button className="btn go-to-login" onClick={() => {
+                            {/* <button className="btn go-to-login" onClick={() => {
                                 setLoggingIn(true)
                                 setSigningUp(false)
                                 setGuest(false)}
@@ -336,13 +336,13 @@ export default function Login() {
                                 setSigningUp(true)
                                 setLoggingIn(false)
                                 setGuest(false)}
-                                }>New user</button>
+                                }>New user</button> */}
 
-                            <button className="btn guest" onClick={() => {
+                            {/* <button className="btn guest" onClick={() => {
                                 setGuest(true)
                                 setLoggingIn(false)
                                 setSigningUp(false)}
-                                } type="button">Guest</button>
+                                } type="button">Guest</button> */}
 
                         </div>
                     <div className="button-form-wrap" >
@@ -356,6 +356,12 @@ export default function Login() {
                                 placeholder="Enter a username"
                                 value={ username }
                                 onChange={ handleChange }
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' && guest) {
+                                        e.preventDefault();
+                                        handleGuest();
+                                    }
+                                }}
                             />
                         </div>
                             <div className="error">{guestError}</div>
